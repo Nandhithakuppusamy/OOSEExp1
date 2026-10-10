@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+header {
+    background: #173b75;
+    color: white;
+    padding: 28px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: min(1000px, 92%);
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: white;
+}
+
+button {
+    margin-top: 18px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button.secondary {
+    background: #475569;
+    margin-top: 0;
+}
+
+button.danger {
+    background: #dc2626;
+}
+
+button.small {
+    padding: 7px 10px;
+    margin: 3px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.document {
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    padding: 15px;
+    margin-top: 12px;
+}
+
+.document strong {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.Pending {
+    color: #b45309;
+}
+
+.status.Verified {
+    color: #15803d;
+}
+
+.status.Rejected {
+    color: #dc2626;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+#message {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .section-heading {
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+}

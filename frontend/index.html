@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Document Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Passport Document Management</h1>
+        <p>Upload and manage documents required for passport automation.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Upload Document</h2>
+
+            <form id="uploadForm">
+                <label for="documentType">Document Type</label>
+                <select id="documentType" required>
+                    <option value="">Select document type</option>
+                    <option value="Aadhaar Card">Aadhaar Card</option>
+                    <option value="Address Proof">Address Proof</option>
+                    <option value="Birth Certificate">Birth Certificate</option>
+                    <option value="Passport Photo">Passport Photo</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="document">Select File</label>
+                <input type="file" id="document" accept=".pdf,.jpg,.jpeg,.png" required>
+
+                <button type="submit">Upload Document</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="card">
+            <div class="section-heading">
+                <h2>Uploaded Documents</h2>
+                <button id="refreshButton" class="secondary">Refresh</button>
+            </div>
+
+            <div id="documentList">
+                <p>Loading documents...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
